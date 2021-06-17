@@ -13,7 +13,8 @@ import css from "../../assets/css.png";
 import html from "../../assets/html.png";
 import java from "../../assets/JAVA.png";
 import android from "../../assets/android.png"
-import sql from "../../assets/sql.png"
+import sql from "../../assets/sql.png";
+import analytics from "../../assets/analytics.png"
 
 const About = ({}) => {
   const data = [
@@ -24,6 +25,7 @@ const About = ({}) => {
     { image: java, caption: "Caption" },
     { image: android, caption: "Caption" },
     { image: sql, caption: "Caption" },
+    { image: analytics, caption: "Caption" },
   ];
 
   const [index, setIndex] = useState(0);

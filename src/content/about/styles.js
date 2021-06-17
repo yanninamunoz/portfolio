@@ -6,3 +6,6 @@ export const Background = styled.img`
   z-index: -1;
   margin-top: 62em;
 `
+export const Container = styled.div`
+  margin-top: "-5em";
+`
