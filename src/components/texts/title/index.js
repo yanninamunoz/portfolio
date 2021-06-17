@@ -9,7 +9,7 @@ const Title = ({ text, color }) => (
 )
 
 Title.propTypes = {
-  color: PropTypes.any,
+  color: PropTypes.string,
   text: PropTypes.string
 }
 

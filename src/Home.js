@@ -1,8 +1,16 @@
 import React from "react";
-import Background from "./assets/background.png";
+import Header from "./components/header";
+import Navbar from "./components/navbar";
+import About from "./components/about";
 
 export default function Home(props) {
   const text = "home";
 
-  return <div styles={{ backgroundColor:'red', position: 'absolute'}}>Home</div>;
+  return (
+    <>
+      <Navbar />
+      <Header />
+      <About />
+    </>
+  );
 }

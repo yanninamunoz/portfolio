@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
@@ -23,35 +23,6 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   z-index: 2;
-  margin-top: 10em;
+  margin-top: 8em;
   margin-left: 4em;
-`
-
-export const Body = styled.p`
-  font-size: 1.4em;
-  margin-bottom: 3em;
-`
-
-export const Button = styled.button`
-  justify-content: space-evenly;
-  overflow: hidden;
-  display: inline-flex;
-  align-items: center;
-  transition: ease background-color 250ms;
-  border-style: none;
-  font-size: 1.3em;
-  color: #fafafa;
-  background-color: #0033ff;
-  border-radius: 30px;
-  height: 2em;
-  width: 20%;
-  cursor: pointer;
-
-  :active:enabled {
-    background-color: #fafafa;
-  }
-
-  :hover:enabled {
-    background-color: #0026bc;
-  }
 `

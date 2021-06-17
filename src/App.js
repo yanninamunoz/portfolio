@@ -21,7 +21,7 @@ function Main() {
   return (
     <React.Fragment>
       <Router>
-        <Header />
+        <Home />
       </Router>
       <Switch>
         {/* <Route exact path="/" component={Home} />

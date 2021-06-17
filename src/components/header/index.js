@@ -1,29 +1,39 @@
 import React from "react";
-import Body from "../texts/body"
-import Title from "../texts/title"
+import Body from "../texts/body";
+import Title from "../texts/title";
+import Button from "../buttons";
 import head from "../../assets/head.png";
 import me from "../../assets/me.png";
+import CV from "../../assets/YanninaMunoz_Developer.pdf"
 
-import {
-  Image,
-  Image2,
-  Content,
-  Button,
-  Container,
-  ContentButton,
-} from "./styles";
+import { Image, Image2, Content, Container } from "./styles";
 
 const Header = ({}) => {
-    const title= "Hi, my name is Yannina."
-    const body= "I'm a web developer & programmer living in Montevideo, Uruguay."
+  const title = "Hi, my name is Yannina.";
+  const body = "I'm a web developer & programmer living in Montevideo, Uruguay.";
+  const contact = "Contact me";
+  const resume = "My resume";
+  const launch = "launch";
+
   return (
     <Container>
       <Image src={head} alt="head" />
       <Image2 src={me} alt="head" />
       <Content>
-        <Title text={title} />
+        <Title text={title} color="primary" />
         <Body text={body} />
-        <Button onClick={() => console.log("click")}>Contact me</Button>
+        <Button
+          size="small"
+          onClick={() => console.log("click")}
+          text={contact}
+        />
+        <br />
+        <Button
+          onClick={() => window.open(CV, "_blank")}
+          size="small"
+          text={resume}
+          icon={launch}
+        />
       </Content>
     </Container>
   );
