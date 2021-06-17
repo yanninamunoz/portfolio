@@ -6,8 +6,8 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "./Home";
-import About from './About';
-import Header from "./components/header";
+import About from './content/about';
+import Header from "./content/header";
 
 function App() {
   return (

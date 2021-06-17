@@ -1,7 +1,7 @@
 import React from "react";
-import Body from "../texts/body";
-import Title from "../texts/title";
-import Button from "../buttons";
+import Body from "../../components/texts/body";
+import Title from "../../components/texts/title";
+import Button from "../../components/buttons";
 import head from "../../assets/head.png";
 import me from "../../assets/me.png";
 import CV from "../../assets/YanninaMunoz_Developer.pdf"
@@ -21,7 +21,7 @@ const Header = ({}) => {
       <Image2 src={me} alt="head" />
       <Content>
         <Title text={title} color="primary" />
-        <Body text={body} />
+        <Body text={body} color='secondary' />
         <Button
           size="small"
           onClick={() => console.log("click")}
