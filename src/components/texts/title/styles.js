@@ -12,4 +12,18 @@ export const StyledTitle = styled.p`
       default: return colors.buttons.white
     }
   }};
+  font-size: ${({ size }) => {
+    switch (size) {
+      case 'small': return `1em`;
+      case 'large': return `4em`;
+      default: return `3em`
+    }
+  }};
+  font-weight: ${({ weight }) => {
+    switch (weight) {
+      case 'light': return 200;
+      case 'bold': return 800;
+      default: return 600
+    }
+  }};
 `

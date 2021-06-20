@@ -1,51 +1,35 @@
 import React, { useState } from "react";
 import Body from "../../components/texts/body";
+import Card3 from "../../components/card";
 import Title from "../../components/texts/title";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import { Container, Card, Card2, ContainerTitle, ContainerTitle2 } from "./styles";
-
-import blob from "../../assets/content.png";
-import js from "../../assets/js.png";
-import reactjs from "../../assets/REACT.png";
-import css from "../../assets/css.png";
-import html from "../../assets/html.png";
-import java from "../../assets/JAVA.png";
-import android from "../../assets/android.png"
-import sql from "../../assets/sql.png";
-import analytics from "../../assets/analytics.png"
+import {data, data2} from "./helper"
+import { Container, Card, ContainerTitle, CardContainer } from "./styles";
 
 const About = ({}) => {
-  const data = [
-    { image: js, caption: "Caption" },
-    { image: reactjs, caption: "Caption" },
-    { image: css, caption: "Caption" },
-    { image: html, caption: "Caption" },
-    { image: java, caption: "Caption" },
-    { image: android, caption: "Caption" },
-    { image: sql, caption: "Caption" },
-    { image: analytics, caption: "Caption" },
-  ];
-
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
-  const title = "Technologies"
-  const body = "Main technologies I work with"
+  const title = "Technologies";
+  const body = "Main technologies I work with";
 
   return (
     <Container>
+      <ContainerTitle>
+        <Title size="large" text={title} />
+        <Body text={body} />
+      </ContainerTitle>
       <Carousel
         activeIndex={index}
         onSelect={handleSelect}
         prevLabel=""
         nextLabel=""
       >
-        {data.map((slide, i) => {
+        {data.map((slide) => {
           return (
-            <Carousel.Item>
+            <Carousel.Item key={slide.id}>
               <img
                 className="d-block w-20"
                 src={slide.image}
@@ -55,11 +39,16 @@ const About = ({}) => {
           );
         })}
       </Carousel>
-      <ContainerTitle>
-        <Title text={title} />
-        <Body text={body} />
-      </ContainerTitle>
       <Card />
+      <CardContainer>
+        {data2.map((i) => {
+          return (
+            <div key={i.id}>
+              <Card3 color="primary" title={i.title} src={i.image} alt="image_default" />
+            </div>
+          );
+        })}
+      </CardContainer>
     </Container>
   );
 };

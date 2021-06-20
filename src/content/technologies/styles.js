@@ -3,7 +3,7 @@ import { colors } from '../../global/colors'
 
 export const Container = styled.div`
   position: absolute;
-  margin-top: 48em;
+  margin-top: 50em;
   width: 100%;
   text-align: -webkit-center;
 `
@@ -29,23 +29,12 @@ export const Content = styled.div`
 export const ContainerTitle = styled.div`
   position: relative;
   text-align: center;
-  margin-top: 6em;
-  margin-bottom: -10em;
+  margin-top: 2em;
+  margin-bottom: 8em;
 `
 
-export const ContainerTitle2 = styled.div`
-  position: relative;
-  text-align: center;
-  margin-top: 6em;
-  margin-bottom: -10em;
-`
-
-export const Card2 = styled.div`
-  position: absolute;
-  z-index: 2 !important;
-  width: 100%;
-  height: 10em;
-  z-index: -1;
-  margin-top: -43em;
-  background-color: ${colors.primary};
+export const CardContainer = styled.div`
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
 `
