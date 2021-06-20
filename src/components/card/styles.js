@@ -9,10 +9,7 @@ export const Container = styled.div`
   border-radius: 5px;
   width: 319px;
   background-color: ${colors.buttons.white};
-  margin-bottom: 1em;
-  margin-right: 1em;
-  margin-left: 1em;
-  margin-top: 2em;
+  margin: 1em 1em 1em 1em;
   transition: transform .2s;
 
     :hover {
