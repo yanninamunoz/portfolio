@@ -1,7 +1,8 @@
 import React from "react";
-import Header from "./content/header";
-import Navbar from "./content/navbar";
-import About from "./content/about";
+import Header from "./sections/header";
+import Navbar from "./sections/navbar";
+import Technologies from "./sections/technologies";
+import Footer from "./sections/footer";
 
 export default function Home(props) {
   const text = "home";
@@ -10,7 +11,8 @@ export default function Home(props) {
     <>
       <Navbar />
       <Header />
-      <About />
+      <Technologies />
+      <Footer />
     </>
   );
 }

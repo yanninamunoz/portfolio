@@ -5,6 +5,6 @@ export const colors = {
         link: '#ddd',
         hover: '#f2f2f2',
     },
-    primary: '#000bb5',
+    primary: '#333333',
     body: '#212529',
 }

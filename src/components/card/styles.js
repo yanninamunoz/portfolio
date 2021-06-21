@@ -10,20 +10,17 @@ export const Container = styled.div`
   width: 319px;
   background-color: ${colors.buttons.white};
   margin: 1em 1em 1em 1em;
-  transition: transform .2s;
+  transition: transform 0.2s;
 
-    :hover {
-      transform: scale(1.1);
-    }
+  :hover {
+    transform: scale(1.4);
+    transition: transform 0.7s;
+    border: 1px solid ${colors.primary};
+  }
 `;
 
 export const Content = styled.div`
-  margin: 15.58px 22px 2.25px 12.06px;
-`;
-
-export const ContentText = styled.div`
-  margin-bottom: 11.33px;
-  cursor: pointer;
+  margin: 15.58px 22px 2.25px 10px;
 `;
 
 export const CustomImage = styled.img`
@@ -42,6 +39,7 @@ export const MediaContent = styled.div`
   border-radius: 5px;
   background-color: ${colors.buttons.hover};
 `;
+
 export const Line = styled.div`
   height: 14.83px;
 `;
