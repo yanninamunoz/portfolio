@@ -15,27 +15,19 @@ export const Image = styled.img`
 
 export const Image2 = styled.img`
   position: absolute;
-  width: 25%;
+  width: 20%;
   margin-top: 9em;
-  margin-left: 60em;
+  margin-left: 70em;
   opacity: 1;
   transition: 0.5s ease;
   display: block;
-  border-radius: 150px;
 
-  :hover {
-    border: 2px solid ${colors.buttons.white};
-    background-size: contain;
-    background-position: right;
-    transform: rotateX(-4) rotateY(20);
-    border-radius: 190px;
-  }
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
   z-index: 2;
-  margin-top: 8em;
+  margin-top: 14em;
   margin-left: 4em;
 `;

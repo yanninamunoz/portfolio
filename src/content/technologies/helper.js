@@ -14,6 +14,11 @@ import sql from "../../assets/sql.png";
 import sqlColor from "../../assets/sqlColor.png";
 import analytics from "../../assets/analytics.png";
 import analyticsColor from "../../assets/analyticsColor.png";
+import bootstrap from "../../assets/bootstrap.png"
+import bootstrapColor from "../../assets/bootstrapColor.png"
+import sass from "../../assets/sass.png"
+import sassColor from "../../assets/sassColor.png"
+import styledComponentColor from "../../assets/styledComponentColor.png"
 
 export const data = [
   { id: 1, image: js, caption: "Caption" },
@@ -24,6 +29,8 @@ export const data = [
   { id: 6, image: android, caption: "Caption" },
   { id: 7, image: sql, caption: "Caption" },
   { id: 8, image: analytics, caption: "Caption" },
+  { id: 9, image: bootstrap, caption: "Caption" },
+  { id: 10, image: sass, caption: "Caption" },
 ];
 
 export const data2 = [
@@ -35,4 +42,7 @@ export const data2 = [
   { id: 6, title: "Android", image: androidColor },
   { id: 7, title: "SQL", image: sqlColor },
   { id: 8, title: "Google Analytics", image: analyticsColor },
+  { id: 9, title: "Bootstrap", image: bootstrapColor },
+  { id: 10, title: "Sass", image: sassColor },
+  { id: 11, title: "Styled component", image: styledComponentColor}
 ];

@@ -4,7 +4,7 @@ import Card3 from "../../components/card";
 import Title from "../../components/texts/title";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {data, data2} from "./helper"
+import { data, data2 } from "./helper";
 import { Container, Card, ContainerTitle, CardContainer } from "./styles";
 
 const About = ({}) => {
@@ -44,7 +44,12 @@ const About = ({}) => {
         {data2.map((i) => {
           return (
             <div key={i.id}>
-              <Card3 color="primary" title={i.title} src={i.image} alt="image_default" />
+              <Card3
+                color="primary"
+                title={i.title}
+                src={i.image}
+                alt="image_default"
+              />
             </div>
           );
         })}

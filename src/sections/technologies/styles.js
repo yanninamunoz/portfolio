@@ -7,5 +7,5 @@ export const Background = styled.img`
   margin-top: 62em;
 `
 export const Container = styled.div`
-  margin-top: "-5em";
+
 `

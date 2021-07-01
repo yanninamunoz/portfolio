@@ -7,14 +7,6 @@ export const Line = styled.div`
 export const Container = styled.form`
   display: flex;
   flex-direction: column;
-  margin-top: 4em;
+  margin-top: 2em;
+  align-items: center;
 `;
-
-export const disabled = css`
-
- display: none;`
-
- export const errorMessage = css`
-  color: red;
-  margin: -1.5em 0em 0.5em 0;
- `

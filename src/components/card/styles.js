@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
-  width: 319px;
+  width: 285px;
   background-color: ${colors.buttons.white};
   margin: 1em 1em 1em 1em;
   transition: transform 0.2s;
@@ -25,7 +25,7 @@ export const Content = styled.div`
 
 export const CustomImage = styled.img`
   z-index: 1;
-  width: 22%;
+  width: 20%;
   padding: 0.5em;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;

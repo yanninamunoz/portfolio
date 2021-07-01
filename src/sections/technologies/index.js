@@ -9,7 +9,7 @@ const Technologies = ({}) => {
   return (
     <Container>
       <TechnologiesContent/>
-      <Background src={blob} alt="blob" />
+      <div />
     </Container>
   );
 };
