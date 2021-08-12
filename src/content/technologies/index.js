@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { data, data2 } from "./helper";
 import { Container, Card, ContainerTitle, CardContainer } from "./styles";
 
-const About = ({}) => {
+const About = () => {
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);

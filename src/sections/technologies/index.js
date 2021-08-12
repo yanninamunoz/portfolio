@@ -1,17 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import TechnologiesContent from "../../content/technologies"
-import { Background, Container } from "./styles";
-import blob from "../../assets/content.png";
+import TechnologiesContent from "../../content/technologies";
+import { Container } from "./styles";
 
-const Technologies = ({}) => {
-
-  return (
-    <Container>
-      <TechnologiesContent/>
-      <div />
-    </Container>
-  );
-};
+const Technologies = () => (
+  <Container>
+    <TechnologiesContent />
+    <div />
+  </Container>
+);
 
 export default Technologies;

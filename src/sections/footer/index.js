@@ -4,27 +4,21 @@ import Title from "../../components/texts/title";
 import Body from "../../components/texts/body";
 import Form from "../../components/form";
 import Socials from "../../content/socials";
-import { Container, Content } from "./styles";
+import { title, body, copyright } from "./helper";
+import { Container, Content, Content2 } from "./styles";
 
-const Footer = ({}) => {
-  const title = "Contact me";
-  const body = "You can send me a message or contact me through my social networks";
-  const copyright = "© 2021 - Yannina Munoz"
-
-  return (
-    <Container>
-      <Title text={title} />
-      <Body text={body} />
-      <div style={{textAlign: "center"}}>
+const Footer = () => (
+  <Container>
+    <Title text={title} />
+    <Body text={body} />
+    <Content2>
       <Content>
         <Form />
         <Socials />
       </Content>
       <Body text={copyright} />
-      </div>
-  
-    </Container>
-  );
-};
+    </Content2>
+  </Container>
+);
 
 export default Footer;

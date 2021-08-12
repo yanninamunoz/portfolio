@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { colors } from "../../global/colors";
 
 export const StyledInput = css`
   background-position: 10px center;

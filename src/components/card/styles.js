@@ -39,7 +39,3 @@ export const MediaContent = styled.div`
   border-radius: 5px;
   background-color: ${colors.buttons.hover};
 `;
-
-export const Line = styled.div`
-  height: 14.83px;
-`;

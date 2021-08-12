@@ -4,6 +4,7 @@ import { colors } from "../../global/colors";
 export const StyledSpan = styled.span`
   font-size: 1.4em;
   color: ${({ color }) => (color ? colors.buttons.white : "none")};
+
   ${({ size }) => {
     switch (size) {
       case "small":

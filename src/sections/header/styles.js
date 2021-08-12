@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import { colors } from "../../global/colors"
+import styled, {keyframes} from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -28,6 +27,23 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   z-index: 2;
-  margin-top: 14em;
+  margin-top: 20em;
   margin-left: 4em;
 `;
+
+export const Styless = keyframes`
+color: white;
+0% {
+
+text-shadow:
+0 0 4px #fff,
+0 0 11px #fff,
+0 0 19px #fff,
+0 0 40px #0fa,
+0 0 80px #0fa,
+0 0 90px #0fa,
+0 0 100px #0fa,
+0 0 150px #0fa;
+
+}
+`

@@ -38,4 +38,5 @@ export const CardContainer = styled.div`
   justify-content: center;
   margin-top: 5em;
   margin-bottom: 5em;
+  width: 90%;
 `

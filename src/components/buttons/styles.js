@@ -12,6 +12,7 @@ export const StyledButton = styled.button`
   height: 3em;
   width: 12%;
   cursor: pointer;
+
   color: ${({ color }) => {
     switch (color) {
       case "secondary":
@@ -20,6 +21,7 @@ export const StyledButton = styled.button`
         return colors.buttons.white;
     }
   }};
+
   background-color: ${({ color }) => {
     switch (color) {
       case "secondary":
@@ -28,6 +30,7 @@ export const StyledButton = styled.button`
         return colors.primary;
     }
   }};
+
   ${({ size }) => {
     switch (size) {
       case "small":
@@ -48,6 +51,7 @@ export const StyledButton = styled.button`
           return colors.buttons.white;
       }
     }};
+
     color: ${({ color }) => {
       switch (color) {
         case "secondary":
@@ -56,6 +60,7 @@ export const StyledButton = styled.button`
           return colors.primary;
       }
     }};
+
     border: 1px solid
       ${({ color }) => {
         switch (color) {

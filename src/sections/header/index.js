@@ -4,24 +4,19 @@ import Title from "../../components/texts/title";
 import Button from "../../components/buttons";
 import head from "../../assets/head.png";
 import me from "../../assets/me.png";
-import CV from "../../assets/YanninaMunoz_Developer.pdf"
-
+import CV from "../../assets/YanninaMunoz_Developer.pdf";
+import { title, body, contact, resume, launch } from "./helper";
 import { Image, Image2, Content, Container } from "./styles";
 
-const Header = ({}) => {
-  const title = "Hi, my name is Yannina.";
-  const body = "I'm a web developer & programmer living in Montevideo, Uruguay.";
-  const contact = "Contact me";
-  const resume = "My resume";
-  const launch = "launch";
-
+const Header = () => {
   return (
     <Container>
       <Image src={head} alt="head" />
       <Image2 src={me} alt="head" />
       <Content>
-        <Title text={title} color="primary" />
-        <Body text={body} color='secondary' />
+        <Title text={title} size="large" color="primary" />
+        <div style={{width: "60rem"}}>   <Body text={body} color="secondary" /></div>
+     
         <Button
           size="small"
           onClick={() => console.log("click")}

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { colors } from '../../../global/colors'
 
 export const StyledTitle = styled.p`
@@ -6,19 +6,22 @@ export const StyledTitle = styled.p`
   font-weight: 400;
   margin-bottom: 0em;
   font-family: 'Russo One', sans-serif;
+
   color: ${({ color }) => {
     switch (color) {
       case 'primary': return colors.primary
       default: return colors.buttons.white
     }
   }};
+
   font-size: ${({ size }) => {
     switch (size) {
       case 'small': return `1em`;
-      case 'large': return `4em`;
+      case 'large': return `5em`;
       default: return `3em`
     }
   }};
+
   font-weight: ${({ weight }) => {
     switch (weight) {
       case 'light': return 200;
