@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Body from "../../components/texts/body";
 import Title from "../../components/texts/title";
 import Button from "../../components/buttons";
@@ -8,9 +8,18 @@ import CV from "../../assets/YanninaMunoz_Developer.pdf";
 import { title, body, contact, resume, launch } from "./helper";
 import { Image, Image2, Content, Container, BodyContainer } from "./styles";
 
-const Header = ({executeScrollForm}) => {
+const Header = ({executeScrollForm, setScroll}) => {
+
+  const divRef = React.createRef();
+
+  useEffect(() => {
+    if (divRef && divRef.current) {
+      setScroll(divRef.current.offsetTop);
+    }
+  }, [divRef, setScroll]);
+
   return (
-    <Container>
+    <Container ref={divRef}>
       <Image src={head} alt="head" />
       <Image2 src={me} alt="head" />
       <Content>

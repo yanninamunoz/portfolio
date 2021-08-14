@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Body from "../../components/texts/body";
 import Card3 from "../../components/card";
 import Title from "../../components/texts/title";
@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { data, data2 } from "./helper";
 import { Container, Card, ContainerTitle, CardContainer } from "./styles";
 
-const About = () => {
+const About = ({ setScroll }) => {
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
@@ -15,8 +15,16 @@ const About = () => {
   const title = "Technologies";
   const body = "Main technologies I work with";
 
+  const divRef = React.createRef();
+
+  useEffect(() => {
+    if (divRef && divRef.current) {
+      setScroll(divRef.current.offsetTop);
+    }
+  }, [divRef, setScroll]);
+
   return (
-    <Container>
+    <Container ref={divRef}>
       <ContainerTitle>
         <Title size="large" text={title} />
         <Body text={body} />

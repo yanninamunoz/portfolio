@@ -8,7 +8,7 @@ export const Container = styled.div`
   position: absolute;
   width: 100%;
   background-color: ${colors.primary};
-  height: 52rem;
+  height: 34rem;
   place-content: center;
 `;
 
@@ -16,11 +16,11 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -13rem;
+  margin-top: 3rem;
 `;
 
 export const Image = styled.img`
-  width: 13rem;
+  width: 9rem;
   padding: 2rem;
 `;
 
@@ -36,7 +36,6 @@ export const Section = styled.div`
   background-color: white;
   width: 80%;
   border-radius: 3rem;
-  border: 1px solid #333333;
   margin-top: 3rem;
   height: 50rem;
   margin-bottom: -29rem;

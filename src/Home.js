@@ -5,24 +5,31 @@ import Technologies from "./sections/technologies";
 import Footer from "./sections/footer";
 import Skills from "./sections/skills"
 
-export default function Home(props) {
-  const [formTopOffset, setFormTopOffset] = useState(0);
+export default function Home() {
+  const [scrollToForm, setScrollToForm] = useState(0);
+  const [scrollToHome, setScrollToHome] = useState(0);
+  const [scrollToTechnologies, setScrollToTechnologies] = useState(0);
+  const [scrollToSkills, setScrollToSkills] = useState(0);
 
-  const scrollToOffset = (topOffset) => {
+  const scroll = (topOffset) => {
     window.scrollTo({
       top: topOffset,
       behavior: "smooth",
     });
   };
 
-  const executeScrollForm = () => scrollToOffset(formTopOffset);
+  const executeScrollForm = () => scroll(scrollToForm);
+  const executeScrollHome = () => scroll(scrollToHome);
+  const executeScrollTechnologies = () => scroll(scrollToTechnologies);
+  const executeScrollSkills = () => scroll(scrollToSkills);
+
   return (
     <>
-      <Navbar />
-      <Header executeScrollForm={executeScrollForm} />
-      <Technologies />
-      <Skills />
-      <Footer setFormOffset={setFormTopOffset} />
+      <Navbar home={executeScrollHome} technologies={executeScrollTechnologies} skills={executeScrollSkills} footer={executeScrollForm} />
+      <Header setScroll={setScrollToHome} executeScrollForm={executeScrollForm} />
+      <Technologies setScroll={setScrollToTechnologies} />
+      <Skills setScroll={setScrollToSkills} />
+      <Footer setScroll={setScrollToForm} />
     </>
   );
 }
