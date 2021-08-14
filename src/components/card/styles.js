@@ -1,5 +1,15 @@
 import styled from "styled-components";
 import { colors } from "../../global/colors";
+import { createBreakpoint } from "styled-components-breakpoint";
+
+const breakpoints = {
+  xs: 0,
+  sm: 576,
+  md: 768,
+  lg: 960,
+};
+
+const breakpoint = createBreakpoint(breakpoints);
 
 export const Container = styled.div`
   z-index: 0;
@@ -13,10 +23,14 @@ export const Container = styled.div`
   transition: transform 0.2s;
 
   :hover {
+    filter: inherit;
     transform: scale(1.4);
     transition: transform 0.7s;
-    border: 1px solid ${colors.primary};
   }
+
+  ${breakpoint("lg")`
+     filter: grayscale(100%); 
+  `}
 `;
 
 export const Content = styled.div`

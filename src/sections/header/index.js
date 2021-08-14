@@ -3,23 +3,24 @@ import Body from "../../components/texts/body";
 import Title from "../../components/texts/title";
 import Button from "../../components/buttons";
 import head from "../../assets/head.png";
-import me from "../../assets/me.png";
+import me from "../../assets/me2.png";
 import CV from "../../assets/YanninaMunoz_Developer.pdf";
 import { title, body, contact, resume, launch } from "./helper";
-import { Image, Image2, Content, Container } from "./styles";
+import { Image, Image2, Content, Container, BodyContainer } from "./styles";
 
-const Header = () => {
+const Header = ({executeScrollForm}) => {
   return (
     <Container>
       <Image src={head} alt="head" />
       <Image2 src={me} alt="head" />
       <Content>
         <Title text={title} size="large" color="primary" />
-        <div style={{width: "60rem"}}>   <Body text={body} color="secondary" /></div>
-     
+        <BodyContainer>
+          <Body text={body} color="secondary" />
+        </BodyContainer>
         <Button
           size="small"
-          onClick={() => console.log("click")}
+          onClick={executeScrollForm}
           text={contact}
         />
         <br />
