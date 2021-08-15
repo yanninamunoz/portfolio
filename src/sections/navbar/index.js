@@ -2,12 +2,15 @@ import React from "react";
 import Body from "../../components/texts/body";
 import { Nav, Link } from "./styles";
 
-const Navbar = ({ home, technologies, skills, footer }) => {
+const Navbar = ({ home, technologies, skills, testimonials, footer }) => {
   return (
     <Nav>
       <Link onClick={footer}>
         <Body text="Contact me" />
-      </Link>{" "}
+      </Link>
+      <Link onClick={testimonials}>
+        <Body text="Testimonials" />
+      </Link>
       <Link onClick={skills}>
         <Body text="Skills" />
       </Link>
