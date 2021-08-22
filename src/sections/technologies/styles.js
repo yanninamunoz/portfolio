@@ -1,5 +1,15 @@
 import styled from "styled-components";
 import { colors } from "../../global/colors";
+import { createBreakpoint } from "styled-components-breakpoint";
+
+const breakpoints = {
+  xs: 0,
+  sm: 576,
+  md: 1478,
+  lg: 2560,
+};
+
+const breakpoint = createBreakpoint(breakpoints);
 
 export const Container = styled.div`
   position: absolute;
@@ -36,6 +46,12 @@ export const CardContainer = styled.div`
   display: flex;
   flex-flow: wrap;
   justify-content: center;
-  padding: 2rem;
-  width: 90%;
+  margin-top: 5rem;
+
+  ${breakpoint("md")`
+    padding: 1rem;
+    width: 92%;
+    margin-top: 2rem;
+  `}
+
 `;

@@ -1,14 +1,36 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 41rem;
   position: absolute;
-  margin-top: 192rem;
   width: 100%;
-  text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-top: 192rem;
+  text-align: -webkit-center;
 `;
 
+export const Content = styled.div`
+  background-color: white;
+  width: 80%;
+  border-radius: 3rem;
+  align-self: center;
+`;
+export const SectionContainer = styled.div`
+  margin-top: 4rem;
+  place-self: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: 4rem;
+  align-items: center;
+`;
+
+export const Section = styled.div`
+  background-color: white;
+  width: 80%;
+  border-radius: 3rem;
+  align-self: center;
+`;
 export const Image = styled.img`
   width: 12rem;
 `;
@@ -17,8 +39,6 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-  padding-right: 20rem;
-  padding-left: 20rem;
 `;
 
 export const Icon = styled.img`

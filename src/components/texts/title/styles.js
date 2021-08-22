@@ -17,7 +17,7 @@ export const StyledTitle = styled.p`
   font-size: ${({ size }) => {
     switch (size) {
       case 'small': return `1em`;
-      case 'large': return `5em`;
+      case 'large': return `4em`;
       default: return `3em`
     }
   }};

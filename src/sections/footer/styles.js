@@ -9,7 +9,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 3em;
-  height: 49em;
+  text-align: center;
   background-color: ${colors.primary};
 `;
 

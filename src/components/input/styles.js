@@ -1,4 +1,14 @@
 import styled, { css } from "styled-components";
+import { createBreakpoint } from "styled-components-breakpoint";
+
+const breakpoints = {
+  xs: 450,
+  sm: 576,
+  md: 1478,
+  lg: 2560,
+};
+
+const breakpoint = createBreakpoint(breakpoints);
 
 export const StyledInput = css`
   background-position: 10px center;
@@ -6,8 +16,16 @@ export const StyledInput = css`
   background-size: 3%;
   border: 1px solid #ccc;
   text-indent: 20px;
-  width: 45em;
+
   border-radius: 5px;
+
+  ${breakpoint("xs")`
+    width: 45em;
+  `}
+
+  ${breakpoint("lg")`
+    width: 82vw;
+  `}
 
   :focus {
     outline: none;
