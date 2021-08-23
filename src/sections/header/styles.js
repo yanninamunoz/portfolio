@@ -1,4 +1,14 @@
 import styled from "styled-components";
+import { createBreakpoint } from "styled-components-breakpoint";
+
+const breakpoints = {
+  xs: 425,
+  sm: 960,
+  md: 1478,
+  lg: 2560,
+};
+
+const breakpoint = createBreakpoint(breakpoints);
 
 export const Container = styled.div`
   width: 100%;
@@ -13,7 +23,6 @@ export const Image = styled.img`
 `;
 
 export const Image2 = styled.img`
-  position: absolute;
   width: 20%;
   margin-top: 20em;
   margin-left: 3em;
@@ -26,8 +35,17 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   z-index: 2;
-  margin-top: 25em;
-  margin-left: 26vw;
+  /* margin-top: 25em; */
+
+  ${breakpoint("sm")`
+    text-align: inherit;
+    margin-left: 26vw;
+  `}
+
+  ${breakpoint("2560")`
+    text-align: center;
+    margin-left: inherit;
+  `}
 `;
 
 export const BodyContainer = styled.div`

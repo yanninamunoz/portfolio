@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Body from "../texts/body";
 import Title from "../texts/title";
-import { Container, Content, CustomImage, MediaContent } from "./styles";
+import { Container, Content, CustomImage, MediaContent, Text } from "./styles";
 
 const Card = ({ src, alt, title, body, color }) => (
   <Container>
@@ -10,8 +10,7 @@ const Card = ({ src, alt, title, body, color }) => (
       {(src || alt) && <CustomImage src={src} alt={alt} />}
     </MediaContent>
     <Content>
-      <Title color={color} size="small" text={title} />
-      <Body color={color} text={body} />
+      <Text>{title}</Text>
     </Content>
   </Container>
 );

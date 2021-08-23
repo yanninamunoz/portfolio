@@ -2,8 +2,8 @@ import styled, { css } from "styled-components";
 import { createBreakpoint } from "styled-components-breakpoint";
 
 const breakpoints = {
-  xs: 450,
-  sm: 576,
+  xs: 425,
+  sm: 960,
   md: 1478,
   lg: 2560,
 };
@@ -13,18 +13,17 @@ const breakpoint = createBreakpoint(breakpoints);
 export const StyledInput = css`
   background-position: 10px center;
   background-repeat: no-repeat;
-  background-size: 3%;
   border: 1px solid #ccc;
   text-indent: 20px;
-
   border-radius: 5px;
-
-  ${breakpoint("xs")`
-    width: 45em;
-  `}
+  background-size: 1.5rem;
 
   ${breakpoint("lg")`
-    width: 82vw;
+    width: 85vw;
+  `}
+
+  ${breakpoint("xs")`
+    width: 70vw;
   `}
 
   :focus {
