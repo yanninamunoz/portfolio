@@ -35,16 +35,18 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   z-index: 2;
-  /* margin-top: 25em; */
-
-  ${breakpoint("sm")`
-    text-align: inherit;
-    margin-left: 26vw;
-  `}
+  text-align: inherit;
+  margin-left: 26vw;
+  margin-top: -18rem
 
   ${breakpoint("2560")`
-    text-align: center;
-    margin-left: inherit;
+
+  `}
+
+${breakpoint("")`
+    text-align: inherit;
+    margin-left: 26vw;
+    margin-top: -18rem
   `}
 `;
 

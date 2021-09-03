@@ -2,11 +2,12 @@ import styled, { css } from "styled-components";
 import { createBreakpoint } from "styled-components-breakpoint";
 
 const breakpoints = {
-  xs: 425,
-  sm: 960,
-  md: 1478,
+  xs: 320,
+  sm: 425,
+  md: 768,
   lg: 2560,
 };
+
 
 const breakpoint = createBreakpoint(breakpoints);
 
@@ -18,17 +19,19 @@ export const StyledInput = css`
   border-radius: 5px;
   background-size: 1.5rem;
 
-  ${breakpoint("lg")`
-    width: 85vw;
-  `}
-
-  ${breakpoint("xs")`
-    width: 70vw;
+ 
+  ${breakpoint("md")`
+    width: 49vw;
   `}
 
   :focus {
     outline: none;
   }
+
+  ${breakpoint("2560")`
+    width: 85vw;
+  `}
+
 `;
 
 export const Email = styled.input`

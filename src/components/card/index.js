@@ -1,7 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Body from "../texts/body";
-import Title from "../texts/title";
 import { Container, Content, CustomImage, MediaContent, Text } from "./styles";
 
 const Card = ({ src, alt, title, body, color }) => (

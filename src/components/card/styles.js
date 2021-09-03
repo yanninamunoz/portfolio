@@ -27,6 +27,7 @@ export const Container = styled.div`
     transform: scale(1.4);
     transition: transform 0.7s;
   }
+
   ${breakpoint("lg")`
      filter: grayscale(100%); 
   `}

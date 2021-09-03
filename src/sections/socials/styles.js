@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 import { createBreakpoint } from "styled-components-breakpoint";
 
 const breakpoints = {
@@ -23,7 +23,7 @@ export const Container = styled.div`
   ${breakpoint("sm")`
     flex-direction: row;
   `}
-`
+`;
 
 export const Content = styled.div`
   display: flex;
@@ -35,14 +35,14 @@ export const Content = styled.div`
   ${breakpoint("xs")`
     white-space: pre;
   `}
-`
+`;
 
 export const Image = styled.img`
   width: 1.5rem;
   margin-right: 1rem;
   margin-left: 1rem;
-`
+`;
 
 export const Link = styled.a`
   text-decoration: none;
-`
+`;
