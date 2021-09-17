@@ -27,6 +27,7 @@ export const data = [
       "Bitbucket",
       "GitLab",
       "Jira",
+      "Azure DevOps"
     ],
     src: OthersSkills,
   },
