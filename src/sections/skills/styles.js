@@ -4,38 +4,9 @@ import { colors } from "../../global/colors";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  position: absolute;
-  width: 100%;
   background-color: ${colors.primary};
   place-content: center;
-
-  @media only screen and (max-width: 2560px) {
-    margin-top: 105em !important;
-  }
-
-  @media only screen and (max-width: 1440px) {
-    margin-top: 115em !important;
-  }
-
-  @media (max-width: 1200px) and (min-width: 1024px) {
-    margin-top: 117em !important;
-  }
-
-  @media only screen and (max-width: 1002px) {
-    margin-top: 219vw !important;
-  }
-
-  @media only screen and (max-width: 960px) {
-    margin-top: 142em !important;
-  }
-
-  @media only screen and (max-width: 667px) {
-    margin-top: 196em !important;
-  }
-
-  @media only screen and (max-width: 375px) {
-    margin-top: 206em !important;
-  }
+  margin-bottom: 31em;
 `;
 
 export const Content = styled.div`

@@ -19,37 +19,8 @@ export const CardContainer = styled.div`
 `;
 
 export const Container = styled.div`
-  position: absolute;
-  width: 100%;
   text-align: -webkit-center;
-
-  @media only screen and (max-width: 2560px) {
-    margin-top: 47em !important;
-  }
-
-  @media only screen and (max-width: 1440px) {
-    margin-top: 50em !important;
-  }
-
-  @media only screen and (max-width: 960px) {
-    margin-top: 58em !important;
-  }
-
-  @media only screen and (max-width: 768px) {
-    margin-top: 60em !important;
-  }
-
-  @media only screen and (max-width: 546px) {
-    margin-top: 66em !important;
-  }
-
-  @media only screen and (max-width: 424px) {
-    margin-top: 75em !important;
-  }
-
-  @media only screen and (max-width: 320px) {
-    margin-top: 77em !important;
-  }
+  margin-bottom: 3em;
 `;
 
 export const Card = styled.div`

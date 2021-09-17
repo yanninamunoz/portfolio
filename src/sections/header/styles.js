@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
-  position: absolute;
+  margin-bottom: 12em;
 `;
 
 export const Image = styled.img`
