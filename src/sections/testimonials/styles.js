@@ -1,15 +1,5 @@
 import styled from "styled-components";
-import { createBreakpoint } from "styled-components-breakpoint";
-
-const breakpoints = {
-  xs: 320,
-  sm: 425,
-  md: 768,
-  xmd: 950,
-  lg: 2560,
-};
-
-const breakpoint = createBreakpoint(breakpoints);
+import { colors } from "../../global/colors";
 
 export const Container = styled.div`
   position: absolute;
@@ -17,21 +7,44 @@ export const Container = styled.div`
   margin-top: 192rem;
   text-align: -webkit-center;
 
-  ${breakpoint("md")`
-    margin-top: 188rem;
-  `}
+  @media only screen and (max-width: 2560px) {
+    margin-top: 174em !important;
+  }
 
-  ${breakpoint("949")`
-    margin-top: 204rem;
-  `}
+  @media only screen and (max-width: 1024px) {
+    margin-top: 175em !important;
+  }
 
-  ${breakpoint("2560")`
-    margin-top:231rem;
-  `}
+  @media only screen and (max-width: 1003px) {
+    margin-top: 175em !important;
+  }
+
+  @media only screen and (max-width: 1002px) {
+    margin-top: 196em !important;
+  }
+
+  @media only screen and (max-width: 960px) {
+    margin-top: 212em !important;
+  }
+
+  @media only screen and (max-width: 949px) {
+    margin-top: 243em !important;
+  }
+
+  @media only screen and (max-width: 769px) {
+    margin-top: 247em !important;
+  }
+
+  @media only screen and (max-width: 663px) {
+    margin-top: 300em !important;
+  }
+
+  @media (max-width: 375px) and (min-width: 320px) {
+    margin-top: 312em !important;
+  }
 `;
 
 export const Content = styled.div`
-  background-color: white;
   width: 80%;
   border-radius: 3rem;
   align-self: center;
@@ -50,7 +63,6 @@ export const SectionContainer = styled.div`
 `;
 
 export const Section = styled.div`
-  background-color: white;
   width: 80%;
   border-radius: 3rem;
   align-self: center;

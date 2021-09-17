@@ -7,4 +7,5 @@ export const colors = {
     },
     primary: '#333333',
     body: '#212529',
+    backgorund: '#ffffff'
 }

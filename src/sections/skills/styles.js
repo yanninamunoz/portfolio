@@ -1,33 +1,41 @@
 import styled from "styled-components";
 import { colors } from "../../global/colors";
-import { createBreakpoint } from "styled-components-breakpoint";
-
-const breakpoints = {
-  xs: 320,
-  sm: 425,
-  md: 768,
-  lg: 950,
-};
-
-const breakpoint = createBreakpoint(breakpoints);
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-
   position: absolute;
   width: 100%;
   background-color: ${colors.primary};
-  height: 34rem;
   place-content: center;
 
-  ${breakpoint("lg")`
-    margin-top: 127em;
-  `}
+  @media only screen and (max-width: 2560px) {
+    margin-top: 105em !important;
+  }
 
-  ${breakpoint("2560")`
-    margin-top: 143rem;
-  `}
+  @media only screen and (max-width: 1440px) {
+    margin-top: 115em !important;
+  }
+
+  @media (max-width: 1200px) and (min-width: 1024px) {
+    margin-top: 117em !important;
+  }
+
+  @media only screen and (max-width: 1002px) {
+    margin-top: 219vw !important;
+  }
+
+  @media only screen and (max-width: 960px) {
+    margin-top: 142em !important;
+  }
+
+  @media only screen and (max-width: 667px) {
+    margin-top: 196em !important;
+  }
+
+  @media only screen and (max-width: 375px) {
+    margin-top: 206em !important;
+  }
 `;
 
 export const Content = styled.div`
@@ -35,18 +43,13 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 3em;
+  padding: 1em;
 `;
 
 export const Image = styled.img`
-  ${breakpoint("sm")`
-    width: 9rem;
-    padding: 2rem;
- `}
-  ${breakpoint("2560")`
-    width: 6rem;
-    padding: 1rem;
- `}
+  width: 7rem;
+  padding: 1rem;
 `;
 
 export const SectionContainer = styled.div`
@@ -55,22 +58,18 @@ export const SectionContainer = styled.div`
   display: flex;
   justify-content: center;
   justify-content: space-around;
+  flex-direction: column;
 
-  ${breakpoint("md")`
+  @media only screen and (min-width: 950px) {
     flex-direction: row;
- `}
-
-  ${breakpoint("2560")`
-    flex-direction:column;
- `}
+  }
 `;
 
 export const Section = styled.div`
-  background-color: white;
+  background-color: ${colors.backgorund};
   width: 80%;
   border-radius: 3rem;
   margin-top: 3rem;
-  height: 50rem;
   margin-bottom: -29rem;
   align-self: center;
 `;

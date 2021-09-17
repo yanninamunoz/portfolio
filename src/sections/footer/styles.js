@@ -11,6 +11,10 @@ export const Container = styled.div`
   padding: 3em;
   text-align: center;
   background-color: ${colors.primary};
+
+  @media (max-width: 375px) and (min-width: 320px) {
+    margin-top: 375em !important;
+  }
 `;
 
 export const Content = styled.div`

@@ -10,7 +10,7 @@ export const StyledButton = styled.button`
   border-style: none;
   border-radius: 5px;
   height: 3em;
-  width: 12%;
+  width: 15em;
   cursor: pointer;
 
   color: ${({ color }) => {
