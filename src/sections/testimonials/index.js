@@ -36,7 +36,7 @@ const Testimonials = ({ setScroll }) => {
   return (
     <Container ref={divRef}>
       <Content>
-        <Title text={title} color="primary" />
+        <Title size="large" text={title} color="primary" />
         <Body text={body} color="primary" />
       </Content>
       <Section>

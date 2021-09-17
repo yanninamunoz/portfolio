@@ -1,15 +1,5 @@
 import styled from "styled-components";
 import { colors } from "../../../global/colors";
-import { createBreakpoint } from "styled-components-breakpoint";
-
-const breakpoints = {
-  xs: 425,
-  sm: 960,
-  md: 1478,
-  lg: 2560,
-};
-
-const breakpoint = createBreakpoint(breakpoints);
 
 export const StyledTitle = styled.p`
   font-size: 3em;
@@ -37,20 +27,15 @@ export const StyledTitle = styled.p`
     }
   }};
 
-  ${breakpoint("2560")`
    font-size: ${({ size }) => {
      switch (size) {
        case "small":
-         return `1em`;
+         return '1em';
        case "large":
-         return `4em`;
+         return '3em';
        default:
-         return `3em`;
+         return '2em';
      }
    }};
-`}
 
-  ${breakpoint("450")`
-   font-size: 2.5rem;
-  `}
 `;

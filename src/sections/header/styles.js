@@ -27,7 +27,7 @@ export const Image2 = styled.img`
   align-self: center;
 
   @media (max-width: 960px) and (min-width: 320px) {
-    margin-top: 26em;
+    margin-top: 20em;
     height: inherit;
   }
 `;

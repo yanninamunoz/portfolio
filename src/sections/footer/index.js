@@ -18,7 +18,7 @@ const Footer = ({ setScroll }) => {
 
   return (
     <Container ref={divRef}>
-      <Title text={title} />
+      <Title size="large" text={title} />
       <Body text={body} />
       <Content2>
         <Content>

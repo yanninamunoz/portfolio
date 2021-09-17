@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { colors } from "../../global/colors";
 
 export const StyledButton = styled.button`
+  margin-top: 0.5em;
   justify-content: center;
   overflow: hidden;
   display: inline-flex;

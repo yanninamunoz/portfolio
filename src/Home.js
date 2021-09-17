@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "./sections/header";
-import Navbar from "./sections/navbar";
+import Nav from "./sections/navbar/index";
 import Technologies from "./sections/technologies";
 import Footer from "./sections/footer";
 import Skills from "./sections/skills"
@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <>
-      <Navbar home={executeScrollHome} technologies={executeScrollTechnologies} skills={executeScrollSkills} testimonials={executeScrollTestimonials} footer={executeScrollForm} />
+      <Nav home={executeScrollHome} technologies={executeScrollTechnologies} skills={executeScrollSkills} testimonials={executeScrollTestimonials} footer={executeScrollForm} />
       <Header setScroll={setScrollToHome} executeScrollForm={executeScrollForm} />
       <Technologies setScroll={setScrollToTechnologies} />
       <Skills setScroll={setScrollToSkills} />

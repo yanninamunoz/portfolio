@@ -17,6 +17,17 @@ export const StyledBody = styled.p`
     }
   }};
 
+  font-size: ${({ size }) => {
+    switch (size) {
+      case "small":
+        return "1em";
+      case "large":
+        return "2em";
+      default:
+        return "1.4em";
+    }
+  }};
+
   color: ${({ color }) => {
     switch (color) {
       case "primary":
