@@ -38,7 +38,7 @@ export const data = [
 
 export const data2 = [
   { id: 1, title: "Javascript", image: jsColor },
-  { id: 2, title: "React JS", image: reactjsColor },
+  { id: 2, title: "React JS & React Native", image: reactjsColor },
   { id: 3, title: "CSS", image: cssColor },
   { id: 4, title: "HTML", image: htmlColor },
   { id: 5, title: "Java", image: javaColor },
