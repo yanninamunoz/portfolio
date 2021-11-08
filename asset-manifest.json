@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/portfolio/static/js/main.385c29f2.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.385c29f2.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.1c8344b7.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.1c8344b7.js.map",
+    "main.js": "/portfolio/static/js/main.50595538.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.50595538.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.d6331d23.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.d6331d23.js.map",
     "static/css/2.61b4cb56.chunk.css": "/portfolio/static/css/2.61b4cb56.chunk.css",
-    "static/js/2.8a1a0e35.chunk.js": "/portfolio/static/js/2.8a1a0e35.chunk.js",
-    "static/js/2.8a1a0e35.chunk.js.map": "/portfolio/static/js/2.8a1a0e35.chunk.js.map",
-    "static/js/3.03b57c04.chunk.js": "/portfolio/static/js/3.03b57c04.chunk.js",
-    "static/js/3.03b57c04.chunk.js.map": "/portfolio/static/js/3.03b57c04.chunk.js.map",
+    "static/js/2.becf6a38.chunk.js": "/portfolio/static/js/2.becf6a38.chunk.js",
+    "static/js/2.becf6a38.chunk.js.map": "/portfolio/static/js/2.becf6a38.chunk.js.map",
+    "static/js/3.8446ad2f.chunk.js": "/portfolio/static/js/3.8446ad2f.chunk.js",
+    "static/js/3.8446ad2f.chunk.js.map": "/portfolio/static/js/3.8446ad2f.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.61b4cb56.chunk.css.map": "/portfolio/static/css/2.61b4cb56.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/portfolio/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.8a1a0e35.chunk.js.LICENSE.txt": "/portfolio/static/js/2.8a1a0e35.chunk.js.LICENSE.txt",
+    "static/js/2.becf6a38.chunk.js.LICENSE.txt": "/portfolio/static/js/2.becf6a38.chunk.js.LICENSE.txt",
     "static/media/TypescriptColor.17936c69.png": "/portfolio/static/media/TypescriptColor.17936c69.png",
     "static/media/YanninaMunoz_Developer.c4a1fb29.pdf": "/portfolio/static/media/YanninaMunoz_Developer.c4a1fb29.pdf",
     "static/media/bug.3bbc20c4.png": "/portfolio/static/media/bug.3bbc20c4.png",
@@ -27,10 +27,10 @@
     "static/media/skills.e3075a9f.png": "/portfolio/static/media/skills.e3075a9f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1c8344b7.js",
+    "static/js/runtime-main.d6331d23.js",
     "static/css/2.61b4cb56.chunk.css",
-    "static/js/2.8a1a0e35.chunk.js",
+    "static/js/2.becf6a38.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.385c29f2.chunk.js"
+    "static/js/main.50595538.chunk.js"
   ]
 }
