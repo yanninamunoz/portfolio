@@ -1,15 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Container, Content, CustomImage, MediaContent, Text } from "./styles";
+import { Container, CustomImage, Text } from "./styles";
 
 const Card = ({ src, alt, title, body, color }) => (
   <Container>
-    <MediaContent>
-      {(src || alt) && <CustomImage src={src} alt={alt} />}
-    </MediaContent>
-    <Content>
+      {src && <CustomImage src={src} alt={alt} />}
       <Text>{title}</Text>
-    </Content>
   </Container>
 );
 

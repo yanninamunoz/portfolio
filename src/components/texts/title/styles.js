@@ -38,4 +38,7 @@ export const StyledTitle = styled.p`
      }
    }};
 
+   @media (max-width: 960px) and (min-width: 320px) {
+    font-size: 2em;
+  }
 `;

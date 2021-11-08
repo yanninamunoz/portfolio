@@ -74,8 +74,12 @@ export const StyledButton = styled.button`
   }
 `;
 
+export const Line = styled.div`
+  width: 0.5em;
+`
+
 export const Text = styled.p`
   font-family: "Russo One", sans-serif;
-  font-size: 16px;
+  font-size: 1.2em;
   margin-bottom: 0;
 `;

@@ -1,18 +1,15 @@
 import styled from "styled-components";
 import { colors } from "../../global/colors";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export const StyledSpan = styled.span`
-  font-size: 1.4em;
-  color: ${({ color }) => (color ? colors.buttons.white : "none")};
-
-  ${({ size }) => {
-    switch (size) {
-      case "small":
-        return `font-size: 1.4em`;
-      case "large":
-        return `font-size: 4em`;
+export const StyledIcon = styled(FontAwesomeIcon)`
+color: ${({ color }) => {
+    switch (color) {
+      case "primary":
+        return colors.primary;
       default:
-        return `font-size: 3em`;
+        return "none";
     }
   }};
-`;
+
+`

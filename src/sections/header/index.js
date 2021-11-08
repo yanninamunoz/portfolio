@@ -5,6 +5,8 @@ import Button from "../../components/buttons";
 import head from "../../assets/head.png";
 import me from "../../assets/me2.png";
 import CV from "../../assets/YanninaMunoz_Developer.pdf";
+import { faCloudDownloadAlt } from "@fortawesome/free-solid-svg-icons";
+
 import { title, body, contact, resume, launch } from "./helper";
 import {
   Image,
@@ -32,7 +34,7 @@ const Header = ({ executeScrollForm, setScroll }) => {
         <Section>
           <Title text={title} size="large" color="primary" />
           <BodyContainer>
-            <Body text={body} color="secondary" />
+            <Body text={body} color="primary" />
           </BodyContainer>
           <Button size="small" onClick={executeScrollForm} text={contact} />
           <br />
@@ -40,7 +42,7 @@ const Header = ({ executeScrollForm, setScroll }) => {
             onClick={() => window.open(CV, "_blank")}
             size="small"
             text={resume}
-            icon={launch}
+            icon={faCloudDownloadAlt}
           />
         </Section>
       </Content>

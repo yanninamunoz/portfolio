@@ -1,16 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StyledSpan } from "./styles";
+import { StyledIcon } from "./styles"
 
-const Icon = ({ icon, size }) => (
-  <StyledSpan className="material-icons" size={size}>
-    {icon}
-  </StyledSpan>
+const Icon = ({ icon, size, color }) => (
+    <StyledIcon color={color} size={size} icon={icon} />
 );
 
 Icon.propTypes = {
+  color: PropTypes.oneOf(["primary", "secondary"]),
   icon: PropTypes.string,
-  size: PropTypes.oneOf(["small", "medium", "large"]),
+  size: PropTypes.string,
 };
 
 export default Icon;

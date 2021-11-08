@@ -3,10 +3,8 @@ import { colors } from "../../global/colors";
 
 export const CardContainer = styled.div`
   justify-content: center;
-  margin-top: 5rem;
 
   @media only screen and (max-width: 2560px) {
-    width: 95%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -14,13 +12,11 @@ export const CardContainer = styled.div`
   @media (max-width: 950px) and (min-width: 320px) {
     display: flex;
     flex-flow: wrap;
-    margin-top: 2rem;
   }
 `;
 
 export const Container = styled.div`
   text-align: -webkit-center;
-  margin-bottom: 3em;
 `;
 
 export const Card = styled.div`

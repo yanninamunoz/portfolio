@@ -1,12 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StyledButton, Text } from "./styles";
+import { StyledButton, Line, Text } from "./styles";
 import Icon from "../icon";
 
 const Button = ({ value, type, text, onClick, size, icon, color }) => (
-  <StyledButton value={value} type={type} onClick={onClick} size={size} color={color}>
+  <StyledButton
+    value={value}
+    type={type}
+    onClick={onClick}
+    size={size}
+    color={color}
+  >
     {text && <Text>{text}</Text>}
-    {icon && <Icon icon={icon} color={color} size="small" />}
+    <Line />
+    {icon && <Icon icon={icon} size="small" />}
   </StyledButton>
 );
 
