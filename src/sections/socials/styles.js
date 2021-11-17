@@ -46,3 +46,8 @@ export const Image = styled.img`
 export const Link = styled.a`
   text-decoration: none;
 `;
+
+export const TextContainer = styled.div`
+  margin-left: 1em;
+  margin-right: 1em;
+`;

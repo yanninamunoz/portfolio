@@ -2,17 +2,10 @@ import React from "react";
 import Input from "../input";
 import Button from "../buttons";
 import { Line, Container } from "./styles";
-import { faUserCircle, faAt, faPhoneSquareAlt, faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
+import { fields } from "./helper";
 import emailjs from "emailjs-com";
 
 const Form = () => {
-  const fields = [
-    { id: 1, type: "text", name: "Fullname", icon: faUserCircle },
-    { id: 2, type: "email", name: "Email", icon: faAt },
-    { id: 3, type: "number", name: "Phone number", icon: faPhoneSquareAlt},
-    { id: 4, type: "textarea", name: "Message", icon: faEnvelopeSquare },
-  ];
-
   const button = "Submit";
 
   function sendEmail(e) {
@@ -39,7 +32,14 @@ const Form = () => {
       {fields.map((i) => {
         return (
           <>
-            <Input color="primary" type={i.type} placeholder={i.name} name={i.name} icon={i.icon} size="lg" />
+            <Input
+              color="primary"
+              type={i.type}
+              placeholder={i.name}
+              name={i.name}
+              icon={i.icon}
+              size="lg"
+            />
             <Line />
           </>
         );

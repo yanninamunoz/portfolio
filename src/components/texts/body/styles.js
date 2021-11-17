@@ -38,4 +38,8 @@ export const StyledBody = styled.p`
         return colors.buttons.white;
     }
   }};
+
+  @media (max-width: 960px) and (min-width: 320px) {
+    font-size: 1.1em;
+  }
 `;

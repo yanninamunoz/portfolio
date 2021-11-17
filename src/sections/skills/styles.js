@@ -37,7 +37,7 @@ export const SectionContainer = styled.div`
 `;
 
 export const Section = styled.div`
-  background-color: ${colors.backgorund};
+  background-color: ${colors.background};
   width: 80%;
   border-radius: 3rem;
   margin-top: 3rem;

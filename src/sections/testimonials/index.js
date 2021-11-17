@@ -1,28 +1,15 @@
 import React, { useEffect } from "react";
-import {
-  title,
-  body,
-  testimonialsText,
-  testimonialsName,
-  position,
-  viewProfile,
-  github,
-} from "./helper";
-import {
-  Container,
-  Image,
-  TextContainer,
-  Icon,
-  ButtonContainer,
-  Section,
-  SectionContainer,
-  Content,
-} from "./styles";
+import { title, body, testimonialsText, testimonialsName,
+  position, viewProfile, github } from "./helper";
+import { Container, Image, TextContainer,
+  ButtonContainer, Section, SectionContainer, Content } from "./styles";
 import Title from "../../components/texts/title";
 import Body from "../../components/texts/body";
 import Button from "../../components/buttons/index";
 import Picture from "../../assets/leandro.png";
-import Linkedin from "../../assets/linkedin.png";
+import Icon from "../../components/icon/index";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+
 
 const Testimonials = ({ setScroll }) => {
   const divRef = React.createRef();
@@ -47,7 +34,7 @@ const Testimonials = ({ setScroll }) => {
             <Body text={testimonialsName} color="primary" weight="bold" />
             <Body text={position} color="primary" />
             <ButtonContainer>
-              <Icon src={Linkedin} alt="github" />
+              <Icon icon={faLinkedinIn} type="brands" />
               <Button
                 size="small"
                 text={viewProfile}

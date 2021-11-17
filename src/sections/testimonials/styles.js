@@ -39,10 +39,11 @@ export const TextContainer = styled.div`
   margin-top: 2rem;
 `;
 
-export const Icon = styled.img`
-  filter: invert(0.8);
-  width: 2rem;
-  margin-right: 1rem;
+export const ButtonContainer = styled.div`
+    display: inline-grid;
+    display: flex;
+    width: 14em;
+    place-content: space-between;
+    align-self: center;
+    align-items: center;
 `;
-
-export const ButtonContainer = styled.div``;
