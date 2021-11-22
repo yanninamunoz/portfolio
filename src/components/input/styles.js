@@ -23,10 +23,14 @@ export const Text = styled.input`
   width: 35vw;
 
   :focus {
-    outline: none
+    outline: none;
   }
 
   @media (max-width: 960px) and (min-width: 320px) {
     width: 50vw;
   }
-`
+`;
+
+export const IconContainer = styled.div`
+  padding: 5;
+`;

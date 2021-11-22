@@ -1,28 +1,15 @@
 import styled from "styled-components";
-import { createBreakpoint } from "styled-components-breakpoint";
-
-const breakpoints = {
-  xs: 425,
-  sm: 960,
-  md: 1478,
-  lg: 2560,
-};
-
-const breakpoint = createBreakpoint(breakpoints);
 
 export const Container = styled.div`
   align-self: center;
   margin-top: 5em;
   margin-bottom: 2em;
+  display: flex;
+  flex-direction: row;
 
-  ${breakpoint("2560")`
-    display: flex;
+  @media (max-width: 960px) and (min-width: 320px) {
     flex-direction: column;
-  `}
-
-  ${breakpoint("sm")`
-    flex-direction: row;
-  `}
+  }
 `;
 
 export const Content = styled.div`
@@ -32,9 +19,9 @@ export const Content = styled.div`
   font-size: 1em;
   place-content: center;
 
-  ${breakpoint("xs")`
+  @media (max-width: 425px) and (min-width: 320px) {
     white-space: pre;
-  `}
+  }
 `;
 
 export const Image = styled.img`

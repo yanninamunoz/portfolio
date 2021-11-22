@@ -9,11 +9,7 @@ const Socials = () => (
     {data.map((i) => {
       return (
         <Content key={i.id}>
-          <Icon
-            icon={i.icon}
-            type={i.type === "brands" ? "brands" : ""}
-            color={i.type === "brands" ? "white" : "secondary"}
-          />
+          <Icon size="lg" icon={i.icon} color="secondary" />
           <TextContainer>
             {i.link && (
               <Link href={i.link}>

@@ -44,7 +44,7 @@ const Form = () => {
           </>
         );
       })}
-      <Button color="secondary" type="submit" value="Send" text={button} />
+      <Button size="small" color="secondary" type="submit" value="Send" text={button} />
     </Container>
   );
 };

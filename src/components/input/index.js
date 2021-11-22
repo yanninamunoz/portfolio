@@ -1,22 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Icon from "../icon";
-import { Container, Text } from "./styles";
+import { Container, Text, IconContainer } from "./styles";
 
 const Input = ({ color, icon, size, name, placeholder, type, onChange }) => {
-      return (
-        <Container>
-          <div style={{padding: 5}}>
-          <Icon size={size} icon={icon} color={color} />
-          </div>
-          <Text
-            name={name}
-            onChange={onChange}
-            type={type}
-            placeholder={placeholder}
-          />
-        </Container>
-      );
+  return (
+    <Container>
+      <IconContainer>
+        <Icon size={size} icon={icon} color={color} />
+      </IconContainer>
+      <Text
+        name={name}
+        onChange={onChange}
+        type={type}
+        placeholder={placeholder}
+      />
+    </Container>
+  );
 };
 
 Input.propTypes = {
